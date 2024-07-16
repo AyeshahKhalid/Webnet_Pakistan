@@ -1,0 +1,116 @@
+.header .container-fluid{
+    display: flex;
+    justify-content: space-around !important;
+}
+.main-header {
+    display: flex;
+    padding: 0 20px;
+    background-color: #2a3a74;
+    font-size: 12px;
+}
+
+.main-header-btn .nav-item {
+    padding: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #1f4481;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-header-btn .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.main-header-btn .nav-item i, .sc-links .nav-item i {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.main-header-btn .nav-item:hover {
+    background-color: #ba1070;
+}
+
+.main-header-btn .nav-item:hover .nav-link,
+.main-header-btn .nav-item:hover i {
+    color: #fff !important;
+}
+.main-header-btn .fa{
+    font-size: 16px;
+}
+
+
+.sc-links .nav-item{
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    border-right: 1px solid #1f4481;
+}
+
+.contactus-button {
+    background-color: #ba1070;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.contactus-button i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+.sub-header .nav-link{
+    font-size: 16px;
+    font-weight: normal;
+    color: #2a3a74;
+    padding: 9px 15px !important;
+}
+.sub-header .nav-link:hover{
+    /* font-size: 16px;
+    font-weight: normal; */
+    color: #ba1070;
+    
+}
+
+.offcanvas-header{
+    border-bottom: 1px solid #2a3a74;
+}
+
+/* media queries */
+@media (min-width: 991px) {
+    .btn-toggle-offcanvas {
+        display: none !important;
+    }
+    
+   
+}
+@media (max-width: 999px) {
+    .offcanvas-body .d-none{
+        display: block !important;
+    }
+     .main-header .container-fluid{
+        display: flex;
+        justify-content: end !important;
+    } 
+    .main-header-btn .navbar-nav{
+        display: flex ;
+        flex-direction: row;
+    } 
+    .main-header-btn .nav-link {
+       padding:8px 8px;
+    }
+    .main-header-btn .nav-item:nth-child(n+3),.sc-links .nav-item  {
+        display: none;
+    }
+
+  .sub-header .container-fluid{
+        display: flex;
+        justify-content: space-between !important;
+  }
+}
