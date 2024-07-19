@@ -136,7 +136,7 @@
         </div>
     </nav>
     <!----------------------------- carousel -------------------------------->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./images/slide1.jpg" class="d-block w-100" alt="slide1">
@@ -156,7 +156,60 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+    </div> -->
+
+
+    <!----------------------------- Slider Animation -------------------------------->
+
+
+    <div class="slider">
+        <div class="slides container"> 
+            <div class="slide row" id="slide1">
+                <div class="col-6">
+                    <h2>Payoneer of Amazon Compliance</h2>
+                    <p>Leading provider of Amazon Compliance Services in Pakistan. We specialize in helping businesses navigate the complex and ever-changing landscape of Amazon's policies and requirements</p>
+                </div>
+                <div class="col-6">
+                    <img src="./images/slide5.png" class="img-fluid" alt="Slide 5">
+                </div>
+                
+            </div>
+            <div class="slide row" id="slide2">
+                <div class="col-6">
+                    <h2>USA LLC FORMATION WITH MENTIORSHIP</h2>
+                    <p>With our LLC formation services in USA, you'll benefit from fast turnaround times, expert advice, and personalized support every step of the way</p>
+                </div>
+                <div class="col-6">
+                    <img src="./images/slide6.jpg" class="img-fluid" alt="Slide 6">
+                </div>
+                
+            </div>
+            <div class="slide row" id="slide3">
+                <div class="col-6">
+                    <h2>UNGATE AMAZON CATEGORY AND BRANDS</h2>
+                    <p>Amazon restricted categories and brands are now a single click away from you. Inquire now immediately and learn it step by step with us.</p>
+                </div>
+                <div class="col-6">
+                    <img src="./images/slide7.jpg" class="img-fluid" alt="Slide 7">
+                </div>
+               
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
+
+
+
+
+    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
